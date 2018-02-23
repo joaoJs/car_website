@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Web Apps Forst Demo </title>
+	<meta name="keywords" value="Wall Street, demo, New York"/>
+	<meta name="description" value="My first web app demo"/>
+	<link rel="stylesheet" href="style.css"/>
+
+	<div class="upper-div">
+		<div class="blank"></div>
+		<div class="logo inner-up">
+			<h1><i>J-lpy</i></h1>
+		</div>
+		<!-- navigation bar -->
+		<nav class="nav inner-up">
+			<a href="make">Make</a>
+			<a href="model">Model</a>
+			<a href="engine">Engine</a>
+			<a href="price">Price</a>
+			<a href="search">Search</a>
+		</nav>
+		<div class="blank"></div>
+	</div>
+</head>
+<body>
+	<div class="main-pic">
+		<img src="./images/mercedes.png"/>
+	</div>
+	<!-- adds -->
+	<div class="container">
+		<div class="add phantom">
+			<img src="./images/phantom.jpg"/>
+			<div class="price">
+				<p><a href="citroen">2018 Rolls-Royce Phantom</a></p>
+			</div>
+			<div class="actual-price">
+				<p><a href="citroen">$417,825</a></p>
+			</div>
+		</div>
+		<div class="add isetta">
+			<img src="./images/isetta.jpg"/>
+			<div class="price">
+				<p><a href="citroen">1954 BMW Isetta</a></p>
+			</div>
+			<div class="actual-price">
+				<p><a href="citroen">$299,99</a></p>
+			</div>
+		</div>
+		<div class="add ds">
+			<img src="./images/ds.jpg"/>
+			<div class="price">
+				<p><a href="citroen">1972 Citroen DS</a></p>
+			</div>
+			<div class="actual-price">
+				<p><a href="citroen">$54,135</a></p>
+			</div>
+		</div>
+		<div class="add lagonda">
+			<img src="./images/lagonda.png">
+			<div class="price">
+				<p><a href="citroen">2016 Aston Martin Lagonda Taraf</a></p>
+			</div>
+			<div class="actual-price" id="taraf">
+				<p><a href="citroen">$1,000,000</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- news -->
+	<div class="news">
+		<div class="new">
+			<div class="new-pic top">
+				<img src="./images/vw.jpg"/>
+			</div>
+			<!-- inside new content we need two divs splitting the space horizontally-->
+			<div class="new-content">
+				<div class="content-top">
+				<!-- inside the content-top there are two divs separated vertically -->
+					<div class="author">
+						<h3>VW</h3>
+						<p><i>John Doe</i></p>
+					</div>
+					<div class="read-more">
+						<div class="button">
+						<a href="read-more">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-bottom">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="max">Nam at nisl vel odio consectetur pulvinar. Quisque sed convallis nibh, vitae condimentum urna. In placerat rhoncus tempor.
+							Morbi in nisl nec nibh lobortis blandit eu nec tortor. In sem nisi, gravida at pulvinar eget, congue eu mi. Sed vel dui ullamcorper, hendrerit dolor quis, posuere magna.</span>
+						</p>
+				</div>
+			</div>
+		</div>
+		<div class="new">
+			<div class="new-pic bottom">
+				<img src="./images/lucid.jpg"/>
+			</div>
+			<div class="new-content">
+				<div class="content-top">
+					<div class="author">
+						<h3>Lucid Air</h3>
+						<p><i>Jane Doe</i></p>
+					</div>
+					<div class="read-more">
+						<div class="button">
+						<a href="read-more">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-bottom">
+					<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="max">Nam at nisl vel odio consectetur pulvinar. Quisque sed convallis nibh, vitae condimentum urna. In placerat rhoncus tempor.
+							Morbi in nisl nec nibh lobortis blandit eu nec tortor. In sem nisi, gravida at pulvinar eget, congue eu mi. Sed vel dui ullamcorper, hendrerit dolor quis, posuere magna.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- </div> -->
+	<!-- map -->
+	<div class="map-wrapper">
+		<div class="map-left">
+			<form id="locationForm">
+				<p>Enter your location:</p> <input type="text" id="locationInput"><br/>
+				<button type="submit" class="btn">Submit</button>
+			</form>
+			<div class="result bike">
+			</div>
+			<div class="result car">
+			</div>
+		</div>
+		<div id="map"></div>
+	</div>
+<!-- footer -->
+<footer>
+	<p>Joao Campos</p>
+	<p>j.campos4g@gmail.com</p>
+	<p>2018</p>
+</footer>
+
+
+	<!-- </div> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="./js/script.js"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPg2Dtd6vrWdpbPho43t0U6OsaCOabMpw&callback=initMap">
+	</script>
+
+</body>
+</html>
